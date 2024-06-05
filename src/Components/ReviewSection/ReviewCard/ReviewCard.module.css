@@ -1,0 +1,92 @@
+.reviewCard {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 2rem;
+  width: 60%;
+  aspect-ratio: 1.2/1;
+  background: #fff;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+.description {
+  font-size: 22px;
+}
+.avatar {
+  border-radius: 50%;
+  width: 150px;
+}
+.name {
+  font-size: 55px;
+}
+.post {
+  color: var(--UnActive);
+  font-size: 30px;
+}
+.rating {
+  width: 15rem;
+}
+@media (max-width: 1024px) {
+  .reviewCard {
+    width: 80%;
+  }
+  .description {
+    font-size: 22px;
+  }
+  .avatar {
+    width: 120px;
+  }
+  .name {
+    font-size: 40px;
+  }
+  .post {
+    color: var(--UnActive);
+    font-size: 25px;
+  }
+  .rating {
+    width: 15rem;
+  }
+}
+@media (max-width: 768px) {
+  .reviewCard {
+    min-width: 60%;
+    .description {
+      font-size: 18px;
+    }
+    .avatar {
+      width: 100px;
+    }
+    .name {
+      font-size: 30px;
+    }
+    .post {
+      color: var(--UnActive);
+      font-size: 20px;
+    }
+    .rating {
+      width: 15rem;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .reviewCard {
+    min-width: 60%;
+    .avatar {
+      width: 80px;
+    }
+    .name {
+      font-size: 22px;
+    }
+    .post {
+      color: var(--UnActive);
+      font-size: 16px;
+    }
+    .rating {
+      width: 15rem;
+    }
+    .description {
+      font-size: 14px;
+    }
+  }
+}
