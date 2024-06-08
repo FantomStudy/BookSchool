@@ -8,8 +8,8 @@ export default function Header() {
   return (
     <>
       <header className="header" id="home">
-        <a href="">
-          <img className="headerLogo" src="/public/Logo.svg" alt="" />
+        <a href="/">
+          <img className="headerLogo" src="Logo.svg" alt="" />
         </a>
 
         <ul
@@ -35,7 +35,7 @@ export default function Header() {
         </ul>
 
         <div className="headerRight">
-          <a href="">Log in</a>
+          <a href="/registration">Log in</a>
           <Button type="fill">Join us</Button>
         </div>
 

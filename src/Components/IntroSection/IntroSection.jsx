@@ -3,19 +3,19 @@ import styles from "./IntroSection.module.css";
 
 const AboutBlock = [
   {
-    image: "public/block1.svg",
+    image: "block1.svg",
     head: "Certified Teacher",
     description:
       "The gradual accumulation of information about atomic and small-scale behaviour...",
   },
   {
-    image: "public/block2.svg",
+    image: "block2.svg",
     head: "2,769 online courses	",
     description:
       "The gradual accumulation of information about atomic and small-scale behaviour...",
   },
   {
-    image: "public/block3.svg",
+    image: "block3.svg",
     head: "2,438 ofline courses	",
     description:
       "The gradual accumulation of information about atomic and small-scale behaviour...",
@@ -39,7 +39,7 @@ export default function IntroSection() {
             <Button type='inline'>Learn More</Button>
           </div>
         </div>
-        <img className={styles.introImg} src="/public/Intro.svg" alt="" />
+        <img className={styles.introImg} src="Intro.svg" alt="" />
       </section>
       <div className={styles.row}>
         {AboutBlock.map((block) => (

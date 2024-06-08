@@ -12,11 +12,11 @@ export default function Footer() {
         <div className="compContacts">
           <p>Get in touch</p>
           <a href="">
-            <p>(480) 555-0103</p> <img src="./public/phone.svg" alt="" />
+            <p>(480) 555-0103</p> <img src="phone.svg" alt="" />
           </a>
           <a href="">
             <p>debra.holt@example.com</p>
-            <img src="./public/mail.svg" alt="" />
+            <img src="mail.svg" alt="" />
           </a>
         </div>
       </footer>

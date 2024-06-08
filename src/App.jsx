@@ -1,20 +1,21 @@
 import "./App.css";
 import Header from "./Components/Header/Header";
-import IntroSection from "./Components/IntroSection/IntroSection";
-import PackagesSection from "./Components/PackagesSection/PackagesSection";
-import ReviewSection from "./Components/ReviewSection/ReviewSection";
 import Footer from "./Components/Footer/Footer";
-import EmailSection from "../src/Components/EmailSection/EmailSection"
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import MainPage from "./Pages/MainPage.jsx";
+import RegistrationPage from "./Pages/RegistrationPage.jsx";
 
 function App() {
   return (
     <>
-      <Header />
-      <IntroSection />
-      <PackagesSection />
-      <ReviewSection />
-      <EmailSection />
-      <Footer />
+        <BrowserRouter>
+            <Header />
+            <Routes>
+                <Route path="/" element={<MainPage />} />
+                <Route path="/registration" element={<RegistrationPage />}/>
+            </Routes>
+            <Footer />
+        </BrowserRouter>
     </>
   );
 }
