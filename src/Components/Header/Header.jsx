@@ -2,9 +2,11 @@ import "./Header.css";
 import { useState } from "react";
 import Button from "../Buttons/Button";
 import { Link } from "react-scroll";
+import {useNavigate} from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setOpen] = useState(false);
+  const navigate = useNavigate();
   return (
     <>
       <header className="header" id="home">
@@ -30,13 +32,15 @@ export default function Header() {
           </Link>
           <div className="mobileAuthBtn">
             <a href="">Log in</a>
-            <Button type="fill">Join us</Button>
+            <Link>
+              <Button type="fill">Join us</Button>
+            </Link>
           </div>
         </ul>
 
         <div className="headerRight">
           <a href="/registration">Log in</a>
-          <Button type="fill">Join us</Button>
+          <Button type="fill" onClick={() => {navigate('/login')}}>Join us</Button>
         </div>
 
         <button

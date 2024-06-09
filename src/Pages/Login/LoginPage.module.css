@@ -1,0 +1,35 @@
+.register{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 12rem 0;
+}
+.head {
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+.form{
+    width: 600px;
+    /*text-align: end;*/
+}
+.inputBlock {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 1.2rem;
+    align-items: center;
+    .inputEmail {
+        width: 100%;
+        border-radius: 0.5rem;
+        background-color: color-mix(in srgb, var(--UnActive) 15%, white);
+        border: none;
+        outline: none;
+        padding: 1rem;
+        font-size: 25px;
+    }
+    button{
+        width: 50%;
+    }
+}
+.bookImg{
+    width: 500px;
+}
